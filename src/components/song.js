@@ -1,4 +1,3 @@
-import react from "react";
 import "../styles/app.scss";
 const Song = ({ currentSong }) => {
   return (

@@ -1,23 +1,37 @@
 .song-container{
     min-height: 60vh;
-    display: flex;;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     img{
         width: 20%;
         border-radius: 50%;
+        transition: all 2s ease;
     }
     h2{
         padding: 3rem 1rem 1rem 1rem;
-        font-family: reross-rectangular,sans-serif;
-        font-weight: 400;
-        font-style: normal;
     }
     h3{
         font-size: 1rem;
-        font-family: reross-rectangular,sans-serif;
-        font-weight: 400;
-        font-style: normal;
     }
+}
+
+@media screen and (max-width:768px){
+    .song-container{
+        img{
+            width: 40%;
+        }
+    }
+}
+@keyframes rotate {
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        tansform:rotate(360deg)
+    }
+}
+.rotateSong{
+    animation: rotate 20s linear forwards infinite;
 }
